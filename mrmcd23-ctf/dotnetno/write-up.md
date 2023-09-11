@@ -180,8 +180,14 @@ the end right upon the point we got the flag.
 But well, with this solution I at least have a reason to open a bug report to the
 .NET team.
 
+*EDIT* Well so much regarding the bug report. The issue is known by the .NET team and
+instead of fixing their `GetFullPath` implementation, they introduced a new
+`ResolveLinkTarget`[^4] method ??? (as mentioned in the GitHub issue[^5])
+
 Solved by [Tyalie](https://chaos.social/@tyalie) and 
 
 [1]: https://github.com/httpie/httpie/issues
 [^2]: https://youtu.be/6lyoUe7CEYs
 [^3]: https://learn.microsoft.com/en-us/dotnet/api/system.io.path.getfullpath?view=net-7.0
+[^4]: https://learn.microsoft.com/de-de/dotnet/api/system.io.directory.resolvelinktarget?view=net-7.0
+[^5]: https://github.com/dotnet/runtime/issues/24271
